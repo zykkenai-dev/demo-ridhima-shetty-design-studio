@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ridhima Shetty Design Studio — Interior Design, Mangaluru</title>
+<meta name="description" content="Ridhima Shetty Design Studio, Balmatta, Mangaluru. Interior design for homes, apartments and restaurants — layouts, 3D renders, furniture, lighting and carpentry. 4.9★ from 133 Google reviews.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,300..700&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#F3EFE8;--paper2:#EAE4DA;--ink:#1F1D1A;--mute:#77716A;--tile:#B5562F;--areca:#4C5B3B;--line:#D9D2C6}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:"Work Sans",system-ui,sans-serif;font-weight:400;font-size:16.5px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.A{font-family:Archivo,sans-serif;font-stretch:112%;letter-spacing:-.01em}
+.wrap{max-width:1360px;margin:0 auto;padding:0 40px}
+.cap{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:26px 40px;max-width:1360px;margin:0 auto}
+.mark{font-family:Archivo;font-stretch:125%;font-weight:600;font-size:15px;letter-spacing:.08em;text-transform:uppercase}
+.mark small{display:block;font-weight:400;letter-spacing:.2em;font-size:10.5px;color:var(--mute);font-stretch:100%}
+.menu{display:flex;gap:34px;font-size:14px}
+.menu a{position:relative}
+.menu a::after{content:"";position:absolute;left:0;bottom:-3px;height:1px;width:0;background:var(--ink);transition:width .3s}
+.menu a:hover::after{width:100%}
+.lnk{display:inline-flex;align-items:center;gap:10px;font-size:14px;border-bottom:1px solid var(--ink);padding-bottom:3px;transition:gap .3s,color .3s,border-color .3s}
+.lnk:hover{gap:16px;color:var(--tile);border-color:var(--tile)}
+/* hero */
+.intro{display:grid;grid-template-columns:1.4fr 1fr;gap:60px;align-items:end;padding:56px 40px 44px;max-width:1360px;margin:0 auto}
+.intro h1{font-family:Archivo;font-stretch:118%;font-weight:300;font-size:clamp(40px,5.4vw,78px);line-height:1.02;letter-spacing:-.03em}
+.intro h1 b{font-weight:600}
+.intro h1 i{font-style:normal;color:var(--tile)}
+.intro p{color:var(--mute);max-width:420px;margin-bottom:22px}
+.strip{display:flex;gap:14px;overflow-x:auto;padding:0 40px 18px;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+.strip figure{flex:none;scroll-snap-align:start}
+.strip img{height:min(52vh,470px);width:auto;aspect-ratio:var(--r);object-fit:cover;filter:saturate(.85);transition:filter .5s}
+.strip figure:hover img{filter:saturate(1)}
+.strip figcaption{font-size:12.5px;color:var(--mute);margin-top:10px;display:flex;justify-content:space-between;gap:20px}
+.disc{padding:6px 40px 0;max-width:1360px;margin:0 auto;font-size:12px;color:var(--mute)}
+/* about */
+section{padding:120px 0}
+.about{display:grid;grid-template-columns:1fr 2fr;gap:60px;border-top:1px solid var(--line);padding-top:40px}
+.about h2{font-family:Archivo;font-stretch:112%;font-weight:400;font-size:clamp(26px,2.8vw,40px);line-height:1.22;letter-spacing:-.015em}
+.about h2 span{color:var(--areca)}
+.stats{display:flex;gap:56px;margin-top:48px;flex-wrap:wrap}
+.stats b{font-family:Archivo;font-stretch:125%;font-weight:500;font-size:40px;display:block;line-height:1}
+.stats span{font-size:13px;color:var(--mute)}
+/* loved */
+.loved{background:var(--ink);color:var(--paper)}
+.loved .head{display:grid;grid-template-columns:1fr 2fr;gap:60px;margin-bottom:60px}
+.loved h2{font-family:Archivo;font-stretch:118%;font-weight:300;font-size:clamp(36px,4.4vw,62px);line-height:1.04;letter-spacing:-.025em}
+.loved .cap{color:#A49D93}
+.list{list-style:none;border-top:1px solid #3a3733}
+.list li{display:grid;grid-template-columns:80px 1fr 1.2fr;gap:30px;padding:28px 0;border-bottom:1px solid #3a3733;align-items:baseline;transition:background .3s,padding .3s}
+.list li:hover{background:#26231f;padding-left:14px}
+.list .n{font-family:Archivo;font-stretch:125%;color:var(--tile);font-size:14px}
+.list h3{font-family:Archivo;font-stretch:112%;font-weight:400;font-size:24px;line-height:1.25}
+.list p{color:#B9B1A6;font-size:15px}
+.src{margin-top:26px;font-size:13px;color:#A49D93}
+/* services */
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.sv img{aspect-ratio:4/5;object-fit:cover;width:100%;margin-bottom:22px}
+.sv h3{font-family:Archivo;font-stretch:112%;font-weight:500;font-size:22px;margin-bottom:6px}
+.sv p{color:var(--mute);font-size:15px}
+.sv .cap{margin-bottom:8px}
+/* words */
+.words{display:grid;grid-template-columns:1fr 1fr;gap:40px;border-top:1px solid var(--line);padding-top:40px}
+blockquote{font-family:Archivo;font-stretch:108%;font-weight:300;font-size:clamp(22px,2.2vw,30px);line-height:1.3;letter-spacing:-.01em}
+blockquote cite{display:block;font-family:"Work Sans";font-style:normal;font-size:13px;color:var(--mute);margin-top:18px;letter-spacing:0}
+/* contact */
+.contact{background:var(--paper2)}
+.contact .g{display:grid;grid-template-columns:1.3fr 1fr;gap:60px;align-items:end}
+.contact h2{font-family:Archivo;font-stretch:120%;font-weight:300;font-size:clamp(42px,6vw,92px);line-height:.98;letter-spacing:-.035em}
+.contact h2 b{font-weight:600;color:var(--tile)}
+.ci{display:grid;gap:22px}
+.ci div{border-top:1px solid var(--line);padding-top:14px}
+.ci a.big{overflow-wrap:anywhere;font-family:Archivo;font-stretch:112%;font-size:24px}
+.ci a.big:hover{color:var(--tile)}
+footer{padding:30px 40px 44px;max-width:1360px;margin:0 auto;display:flex;justify-content:space-between;font-size:13px;color:var(--mute);gap:20px;flex-wrap:wrap}
+.wa{position:fixed;right:24px;bottom:24px;z-index:30;display:flex;align-items:center;gap:10px;background:var(--ink);color:var(--paper);padding:14px 20px;border-radius:999px;font-size:14px;box-shadow:0 10px 30px rgba(31,29,26,.25);transition:transform .3s,background .3s}
+.wa:hover{transform:translateY(-3px);background:var(--areca)}
+.wa i{width:9px;height:9px;border-radius:50%;background:#25D366}
+.mbar{display:none}
+.fx{opacity:0;transform:translateY(26px);transition:opacity 1s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1)}
+.fx.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.fx{opacity:1;transform:none}}
+@media (max-width:1024px){
+ .menu{display:none}
+ .intro,.about,.loved .head,.contact .g,.words{grid-template-columns:1fr;gap:28px}
+ .svc{grid-template-columns:1fr 1fr}
+ .list li{grid-template-columns:60px 1fr}
+ .list li p{grid-column:2}
+}
+@media (max-width:640px){
+ .wrap{padding:0 20px}
+ header.top{padding:20px}
+ .intro{padding:32px 20px 30px}
+ .strip{padding:0 20px 14px}
+ .strip img{height:340px}
+ .disc{padding:6px 20px 0}
+ section{padding:80px 0}
+ .svc{grid-template-columns:1fr}
+ .stats{gap:32px}
+ .list li{grid-template-columns:44px 1fr;gap:16px}
+ footer{padding:24px 20px 40px}
+ body{padding-bottom:74px}
+ .wa{display:none}
+ .mbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--ink);padding-bottom:env(safe-area-inset-bottom)}
+ .mbar a{height:62px;display:flex;align-items:center;justify-content:center;gap:8px;color:var(--paper);font-size:14.5px}
+ .mbar a+a{border-left:1px solid #3a3733}
+ .mbar i{width:8px;height:8px;border-radius:50%;background:#25D366}
+}
+</style>
+</head>
+<body>
+<header class="top">
+ <a class="mark" href="#">Ridhima Shetty<small>Design Studio · Mangaluru</small></a>
+ <nav class="menu"><a href="#studio">Studio</a><a href="#services">Services</a><a href="#clients">Clients say</a><a href="#contact">Contact</a></nav>
+ <a class="lnk" href="#contact">Start a project →</a>
+</header>
+
+<section style="padding:0">
+ <div class="intro">
+  <h1 class="fx">Interiors that fit <b>your life,</b> your budget — and <i>Mangalore.</i></h1>
+  <div class="fx"><p>Homes, apartments and restaurants, designed from layout to last light fitting. What you approve in 3D is what you walk into.</p><a class="lnk" href="https://wa.me/919739930232?text=Hi%20Ridhima%2C%20I%27d%20like%20to%20discuss%20an%20interior%20project" target="_blank" rel="noopener">Talk to the studio on WhatsApp →</a></div>
+ </div>
+ <div class="strip" aria-label="Interior mood images">
+  <figure style="--r:4/5"><img src="https://images.unsplash.com/photo-1750764515068-80d222d974bb?w=900&q=75&auto=format&fit=crop" alt="Minimal open living space"><figcaption><span>Living</span><span>01</span></figcaption></figure>
+  <figure style="--r:3/2"><img src="https://images.unsplash.com/photo-1615529182904-14819c35db37?w=1200&q=75&auto=format&fit=crop" alt="Living room with woven pendant light"><figcaption><span>Lighting</span><span>02</span></figcaption></figure>
+  <figure style="--r:4/5"><img src="https://images.unsplash.com/photo-1689043528099-2ba014dd7c64?w=900&q=75&auto=format&fit=crop" alt="Kitchen with a dining table by the window"><figcaption><span>Kitchen</span><span>03</span></figcaption></figure>
+  <figure style="--r:3/2"><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&q=75&auto=format&fit=crop" alt="Warm restaurant interior with wooden tables"><figcaption><span>Restaurant</span><span>04</span></figcaption></figure>
+  <figure style="--r:4/5"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=900&q=75&auto=format&fit=crop" alt="Round wooden dining table"><figcaption><span>Dining</span><span>05</span></figcaption></figure>
+  <figure style="--r:3/2"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&q=75&auto=format&fit=crop" alt="White and wood living room"><figcaption><span>Apartment</span><span>06</span></figcaption></figure>
+ </div>
+ <p class="disc">Mood imagery for this concept — the studio's own project photos would go here.</p>
+</section>
+
+<section id="studio"><div class="wrap">
+ <div class="about">
+  <span class="cap fx">The studio</span>
+  <div class="fx">
+   <h2>From a Kodialbail apartment with a reworked layout to a full restaurant renovation, the studio designs <span>minimal, utility-first spaces</span> that respect how people in Mangalore actually live — the light, the rain and the budget.</h2>
+   <div class="stats"><div><b>4.9★</b><span>Google rating</span></div><div><b>133</b><span>Google reviews</span></div><div><b>Balmatta</b><span>Studio, Mangaluru</span></div></div>
+  </div>
+ </div>
+</div></section>
+
+<section class="loved" id="clients"><div class="wrap">
+ <div class="head"><span class="cap fx">What clients loved</span><h2 class="fx">Seven reasons, in one client's own words.</h2></div>
+ <ul class="list">
+  <li class="fx"><span class="n">01</span><h3>Never forced to blow the budget</h3><p>Design choices were steered to fit what the client planned to spend.</p></li>
+  <li class="fx"><span class="n">02</span><h3>The home matches the 3D renders</h3><p>What was approved on screen is what got built.</p></li>
+  <li class="fx"><span class="n">03</span><h3>Always available</h3><p>Questions answered through the project, not just at sign-off.</p></li>
+  <li class="fx"><span class="n">04</span><h3>A great eye for aesthetics</h3><p>Calm, considered spaces without trend-chasing.</p></li>
+  <li class="fx"><span class="n">05</span><h3>Good deals on furniture &amp; lights</h3><p>Sourcing that stretches the budget further.</p></li>
+  <li class="fx"><span class="n">06</span><h3>Skilled carpenters</h3><p>Joinery and finishing handled by a trusted team.</p></li>
+  <li class="fx"><span class="n">07</span><h3>Issues fixed after moving in</h3><p>Post-handover snags were sorted promptly.</p></li>
+ </ul>
+ <p class="src fx">Summarised from a public Google review (Feb 2024).</p>
+</div></section>
+
+<section id="services"><div class="wrap">
+ <span class="cap fx" style="display:block;margin-bottom:40px">Services</span>
+ <div class="svc">
+  <div class="sv fx"><img src="https://images.unsplash.com/photo-1724582586458-a51791349977?w=800&q=75&auto=format&fit=crop" alt="Modern living room with a large window" loading="lazy"><div class="cap">01</div><h3>Homes &amp; apartments</h3><p>Full interiors or renovations, including layout changes that make small flats work harder.</p></div>
+  <div class="sv fx"><img src="https://images.unsplash.com/photo-1565650839149-2c48a094196c?w=800&q=75&auto=format&fit=crop" alt="Restaurant seating with wooden tables" loading="lazy"><div class="cap">02</div><h3>Restaurants &amp; commercial</h3><p>Spaces that look good on day one and survive a full house every night.</p></div>
+  <div class="sv fx"><img src="https://images.unsplash.com/photo-1583719445062-62d0d98c4d8b?w=800&q=75&auto=format&fit=crop" alt="Wooden table with a potted plant" loading="lazy"><div class="cap">03</div><h3>3D design &amp; execution</h3><p>Renders, furniture, lighting and carpentry — managed through to handover and beyond.</p></div>
+ </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+ <div class="words">
+  <blockquote class="fx">“Within the budget… adapting to the Mangalore context.”<cite>Google review · Oct 2025</cite></blockquote>
+  <blockquote class="fx">A Kodialbail apartment, layout change and all — kept minimalist and utility-focused.<cite>Paraphrased from a Google review · Jun 2025</cite></blockquote>
+ </div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap g">
+ <h2 class="fx">Let's design <b>yours.</b></h2>
+ <div class="ci fx">
+  <div><span class="cap">Call / WhatsApp</span><br><a class="big" href="tel:+919739930232">+91 97399 30232</a></div>
+  <div><span class="cap">Email</span><br><a class="big" href="mailto:ridhimashettydesigns@gmail.com">ridhimashettydesigns@gmail.com</a></div>
+  <div><span class="cap">Studio</span><br>7th floor, Paramount West Gate, opp. Mangalore Nursing Home, Balmatta, Mangaluru 575002<br><a class="lnk" style="margin-top:10px" href="https://www.google.com/maps/search/?api=1&query=Ridhima+Shetty+Design+Studio+Mangaluru" target="_blank" rel="noopener">Directions →</a></div>
+ </div>
+</div></section>
+
+<footer><span>© Ridhima Shetty Design Studio · <a href="https://instagram.com/ridhimashettydesignstudio" target="_blank" rel="noopener">Instagram</a></span><span>Concept website by Zykken</span></footer>
+
+<a class="wa" href="https://wa.me/919739930232" target="_blank" rel="noopener"><i></i>WhatsApp the studio</a>
+<div class="mbar"><a href="https://wa.me/919739930232" target="_blank" rel="noopener"><i></i>WhatsApp</a><a href="tel:+919739930232">Call studio</a></div>
+<script>
+var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.1});
+document.querySelectorAll('.fx').forEach(function(el){io.observe(el)});
+</script>
+</body>
+</html>
